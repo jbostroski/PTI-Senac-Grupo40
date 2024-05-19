@@ -29,7 +29,76 @@ Desenvolvimento do diagrama de casos de uso representando os cenários referente
 
 Descrição dos cenários dos casos de uso construídos, levando em consideração um cenário principal, dois cenários alternativos, pré-condições e pós-condições.
 
-Previsto também a elaboração de um diagrama de classe, de acordo com a proposta do projeto:
+Previsto também a elaboração de um diagrama de classe, de acordo com a proposta do projeto; Foi utilizado a linguagem Mermaid, para representar os diagramas de classes UML e digrama de casos de uso.
+<br>
+
+Diagrama de Casos de Uso:
+<br>
+```mermaid
+classDiagram
+    class SistemaDeCadastroUniversitario {
+        +validarLogin()
+        +efetuarLogin()
+        +acessarMenuDeCadastramento()
+        +efetuarCadastro()
+        +editarCadastro()
+        +validacaoDoCadastro()
+        +voltarAoMenuDeCadastros()
+        +voltarATelaInicial()
+    }
+
+    class Usuario {
+        <<abstract>>
+        +login
+        +senha
+        +efetuarLogin()
+        +validarLogin()
+    }
+
+    class PessoaFisica {
+        +nome
+        +cpf
+        +dataDeNascimento
+    }
+
+    class PessoaJuridica {
+        +razaoSocial
+        +cnpj
+        +dataDeFundacao
+    }
+
+    class Administrador {
+        +acessarMenuDeCadastramento()
+        +efetuarCadastro()
+        +editarCadastro()
+        +voltarAoMenuDeCadastros()
+        +validacaoDoCadastro()
+    }
+
+    SistemaDeCadastroUniversitario --> Usuario : tem
+    Usuario <|-- PessoaFisica
+    Usuario <|-- PessoaJuridica
+    SistemaDeCadastroUniversitario --> Administrador : tem
+
+    class MenuDeCadastramento {
+        +acessar()
+        +voltarAoMenuDeCadastros()
+    }
+
+    class Cadastro {
+        +efetuar()
+        +editar()
+        +validar()
+    }
+
+    Administrador --> MenuDeCadastramento
+    Administrador --> Cadastro
+
+```
+<br>
+Diagrama de Classe UML:
+<br>
+
 ```mermaid
 classDiagram
     class PessoaFisica {
