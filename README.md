@@ -21,7 +21,7 @@ O projeto consiste no processo de modelagem de um sistema voltado a gestão de d
 
 Desenvolvimento do diagrama de casos de uso representando os cenários referente ao sistema, composto pelas seguintes partes:
 
- -   Pessoa Física;
+-   Pessoa Física;
 -   Pessoa Jurídica;
 -   Professores;
 -   Fornecedores;
@@ -29,8 +29,96 @@ Desenvolvimento do diagrama de casos de uso representando os cenários referente
 
 Descrição dos cenários dos casos de uso construídos, levando em consideração um cenário principal, dois cenários alternativos, pré-condições e pós-condições.
 
-Elaboração do diagrama de classe, de acordo com a proposta do projeto.
+Previsto também a elaboração de um diagrama de classe, de acordo com a proposta do projeto:
+```mermaid
+classDiagram
+    class PessoaFisica {
+        -id: Int
+        -cpf: String
+        +primeiroNome: String
+        +sobrenome: String
+        +dataNascimento: Date
+        +dataCadastro: Date
+        +telefone: Long
+        +endereco: String
+        -tipoPessoaFisica: Int
+        +formacaoAcademica: String
+        +habilitado: Bool
+        +calculadade(dataNascimento): Int
+        +desativarCadastro(habilitado): Void
+    }
 
+    class Aluno {
+        -tipoPessoaFisica: Int
+        +numeroMatricula: Int
+        +dataMatricula: Date
+        +aprovado: Bool
+        +dataAprovacao: Date
+        +aprovarAluno(aprovado): Void
+        +matricular(pessoaFisicaId): Void
+    }
+
+    class Colaborador {
+        -tipoPessoaFisica: Int
+        -tipoCargo: Int
+        +dataContratacao: Date
+        +dataDesligamento: Date
+        -tipoColaborador: Int
+        #status: Int
+        +cadastrarColaborador(pessoaFisicaId): Void
+        +statusColaborador(pessoaFisicaId): String
+    }
+
+    class Professor {
+        -tipoColaborador: Int
+        +especializacao: String
+        +agendarAula(pessoaFisicaId, materiaId, turmaId): Void
+        +turmasCoordenadas(): String
+    }
+
+    class Cargos {
+        -id: Int
+        -tipoCargo: Int
+        +setor: String
+        +funcao: Int
+    }
+
+    class Materia {
+        -id: Int
+        +nome: String
+        +segmento: String
+        +area: String
+        #dataCadastro: Date
+        +modalidade: Int
+        +valor: Float
+        +descricao: String
+        #cargaHoraria: Int
+        +atualizarValor(valor): Void
+    }
+
+    class Turma {
+        +professor: Professor
+        +aluno: Aluno
+        +materia: Materia
+        #dataInicio: Date
+        #dataFim: Date
+        +disponibilidade: Bool
+        #status: Int
+        +indisponibilizarTurma(disponibilidade): Void
+        +encerrarTurma(dataFim): Void
+        +iniciarTurma(dataInicio): Void
+    }
+
+    PessoaFisica "1" -- "0..1" Aluno
+    PessoaFisica "1" -- "0..1" Colaborador
+    PessoaFisica "1" -- "0..1" Professor
+    Colaborador "1" -- "0..1" Cargos
+    Aluno "1..*" -- "1..*" Materia : Frequenta
+    Turma "1..*" -- "1..1" Materia : Possui
+    Turma "1..*" -- "1..*" Aluno : Possui
+    Turma "1..1" -- "1..*" Professor : Leciona
+
+```
 
 ## Segunda Entrega:
 
