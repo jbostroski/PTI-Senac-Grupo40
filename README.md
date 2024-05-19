@@ -4,7 +4,7 @@ Projeto Integrador: Desenvolvimento de Sistemas Orientado a Objetos.
 
 # Proposta do Projeto:
 
-O proejto consiste no processo de modelagem de um sistema voltado a gestão de dados de um centro universitário **O projeto foi executado em duas etapas, listadas abaixo:**
+O projeto consiste no processo de modelagem de um sistema voltado a gestão de dados de um centro universitário **O projeto foi executado em duas etapas, listadas abaixo:**
 
 ## Primeira Entrega:
 
