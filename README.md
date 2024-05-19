@@ -26,9 +26,13 @@ Elaboração do diagrama de classe, de acordo com a proposta do projeto.
 É composta pela prototipação (interface do sistema) do que foi realizado na primeira parte do projeto. Os protótipos contemplam as seguintes interfaces:
 
 [Cadastro de Pessoa Física](https://github.com/jbostroski/PTI-Senac-Grupo40/blob/main/pessoa_fisica.png)
+<br>
 [Cadastro de Pessoa Jurídica](https://github.com/jbostroski/PTI-Senac-Grupo40/blob/main/pessoa_juridica.png)
+<br>
 [Cadastro de Professores](https://github.com/jbostroski/PTI-Senac-Grupo40/blob/main/professor.png)
+<br>
 [Cadastro de Fornecedores](https://github.com/jbostroski/PTI-Senac-Grupo40/blob/main/fornecedores.png)
+<br>
 [Cadastro de Alunos](https://github.com/jbostroski/PTI-Senac-Grupo40/blob/main/alunos.png)
 
 
