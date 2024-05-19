@@ -1,16 +1,16 @@
-<center>Senac EAD - Análise e Desenvolvimento de Sistemas</center>
+<h1 align="center">Senac EAD - Análise e Desenvolvimento de Sistemas</h1>
 <br>
-<center>Projeto Integrador: Desenvolvimento de Sistemas Orientado a Objetos.</center>
+<h2 align="center">Projeto Integrador: Desenvolvimento de Sistemas Orientado a Objetos.</h2>
 <br>
 Integrantes:
 <br>
-- ANDREW MATOS ASCAR
+- Andrew Matos Ascar
 <br>
-- HUMBERTO MOURA DOS ANJOS JUNIOR
+- Humberto Moura Dos Anjos Junior
 <br>
-- ITALO DA SILVA BARBOSA
+- Italo Da Silva Barbosa
 <br>
-- JHONATAN BRUNO OSTROSKI
+- Jhonatan Bruno Ostroski
 
 
 # Proposta do Projeto:
