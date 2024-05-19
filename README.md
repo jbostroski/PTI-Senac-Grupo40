@@ -192,7 +192,11 @@ classDiagram
 ## Segunda Entrega:
 
 É composta pela prototipação (interface do sistema) do que foi realizado na primeira parte do projeto. Os protótipos contemplam as seguintes interfaces:
-
+<br>
+<br>
+[Acessar o projeto no FIGMA:](https://www.figma.com/design/o0pfjlq0lF58tdJkrCYU8t/PI-Senac-2?node-id=50%3A2&t=2qHNStt3mwx0BdOq-1)
+<br>
+<br>
 [Cadastro de Pessoa Física](https://github.com/jbostroski/PTI-Senac-Grupo40/blob/main/pessoa_fisica.png)
 <br>
 [Cadastro de Pessoa Jurídica](https://github.com/jbostroski/PTI-Senac-Grupo40/blob/main/pessoa_juridica.png)
