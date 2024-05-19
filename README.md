@@ -1,5 +1,14 @@
 **Senac EAD - Análise e Desenvolvimento de Sistemas**
-Projeto Integrador: Desenvolvimento de Sistemas Orientado a Objetos. 
+<br>
+Projeto Integrador: Desenvolvimento de Sistemas Orientado a Objetos.
+**Integrantes:**
+- ANDREW MATOS ASCAR
+<br>
+- HUMBERTO MOURA DOS ANJOS JUNIOR
+<br>
+- ITALO DA SILVA BARBOSA
+<br>
+- JHONATAN BRUNO OSTROSKI
 
 
 # Proposta do Projeto:
