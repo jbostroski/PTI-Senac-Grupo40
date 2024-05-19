@@ -22,3 +22,19 @@ Elaboração do diagrama de classe, de acordo com a proposta do projeto.
 
 
 ## Segunda Entrega:
+
+É composta pela prototipação (interface do sistema) do que foi realizado na primeira parte do projeto. Os protótipos contemplam as seguintes interfaces:
+
+- Cadastro de Pessoa Física ​
+
+- Cadastro de Pessoa Jurídica ​
+
+- Cadastro de Professores ​
+
+- Cadastro de Fornecedores ​
+
+- Cadastro de Alunos
+
+Os protótipos foram desenvolvidos utilizando a ferramenta Figma. 
+
+**Os arquivos foram reunidos neste repositório.**
